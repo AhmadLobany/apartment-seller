@@ -1,4 +1,9 @@
 
+
+const source = $('#apart-template').html();
+const template = Handlebars.compile(source)
+
+
 $("button").on("click", function () {
     let address = $("#addr-input").val()
     let minPrice = $("#min-p-input").val()
@@ -6,15 +11,16 @@ $("button").on("click", function () {
     let minRooms = $("#min-r-input").val()
     let maxRooms = $("#max-r-input").val()
     let immediate = $("#immed-y")
-
-    let relevantApts = findRelevantApts(address, minPrice, maxPrice, minRooms, maxRooms, immediate)
+    let parking = $('#park-y').is(":checked")
+    let relevantApts = findRelevantApts(address, minPrice, maxPrice, minRooms, maxRooms, immediate,parking)
     renderApts(relevantApts)
 })
 
 const renderApts = function (apartments) {
-    $("#results").empty()
-    console.log(apartments) //array of apartments to render
-    //Your code goes here.
+    $("#results").empty();
+    const newHTML = template({data: apartments});
+    $('#results').append(newHTML);
+    if(apartments=="") alert('No Matching Results')
 }
 
 renderApts(apartments) //renders apartments when page loads

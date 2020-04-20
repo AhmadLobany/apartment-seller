@@ -71,7 +71,9 @@ label{
     "i la a"
     "i lpr p"
     "i lr r"
-    "i lpark park";
+    "i lpark park"
+    "i ln n"
+    "i le e";
     box-shadow: 1px 1px 3px #0a1612;
     margin: 20px;
     padding: 20px;
@@ -130,7 +132,13 @@ button:active{background-color: #443729;}
     grid-area: lpark;
 }
 
-.result>.l-immediate{}
+.result>.l-immediaten{
+    grid-area: ln;
+}
+
+.result>.l-immediatee{
+    grid-area: le;
+}
 
 .result>.address{
     grid-area: a;
@@ -148,7 +156,14 @@ button:active{background-color: #443729;}
     grid-area: park;
 }
 
-.result>.immediate{}
+.result>.immediaten{
+    grid-area: n;
+     
+}
+
+.result>.immediatee{
+    grid-area: e;
+}
 
 .no-match{
     color: #DD6300;
