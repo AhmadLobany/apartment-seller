@@ -1,0 +1,27 @@
+{
+  "name": "apartment-seller",
+  "version": "1.0.0",
+  "description": "Handlebars Project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "review": "node node_modules/elevation-pr/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhmadLobany/apartment-seller.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhmadLobany/apartment-seller/issues"
+  },
+  "homepage": "https://github.com/AhmadLobany/apartment-seller#readme",
+  "dependencies": {
+    "elevation-pr": "^1.2.0",
+    "font-awesome": "^4.7.0",
+    "handlebars": "^4.7.6",
+    "jquery": "^3.5.0"
+  },
+  "devDependencies": {}
+}
